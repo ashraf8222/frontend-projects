@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100vh;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(219, 219, 219);
+}
+.stopwatch{
+    height: 160px;
+    width: 431px;
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.stopwatch .upper{
+    height: 78px;
+    width: 420px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+.stopwatch .upper .watch{
+    height: 70px;
+    width: 120px;
+    font-size: 30px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.stopwatch .upper .watch:nth-child(1)::after, 
+.stopwatch .upper .watch:nth-child(2)::after, 
+.stopwatch .upper .watch:nth-child(3)::after{
+    content: ":";
+    position: absolute;
+    top: 7px;
+    right: -21px;
+    font-size: 40px;
+}
+.stopwatch .lower{
+    height: 50px;
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+.stopwatch .lower .button{
+    height: 38px;
+    width: 100px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.stopwatch .lower .button:nth-child(1){
+     background-color: rgb(19, 226, 19);
+}
+.stopwatch .lower .button:nth-child(2){
+    background-color: rgb(255, 38, 0);
+}
+.stopwatch .lower .button:nth-child(3){
+    background-color: rgb(0, 140, 231);
+}
+.stopwatch .lower .button:nth-child(1):hover, 
+.stopwatch .lower .button:nth-child(2):hover, 
+.stopwatch .lower .button:nth-child(3):hover{
+      cursor: pointer;
+}
+
+
